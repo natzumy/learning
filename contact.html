@@ -1,0 +1,109 @@
+<style type="text/css">
+h2, p, input, textarea{
+	font-family: "Helvetica",sans-serif;
+}
+.actions{
+text-align: right;
+}
+input.button.nonIcon {
+    background: transparent url(images/submit_btn.png) left top no-repeat;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 0.7em;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #3B7321;
+    text-transform: uppercase;
+    line-height: 2.5em;
+    display: inline-block;
+    margin: 0;
+    /* padding:5px 36px 5px 10px; */
+    padding: 5px 20px 5px 15px;
+    border: 0px none;
+    height: 36px;
+    width: 86px;
+}
+h2, label{
+	background: transparent url("images/icns_contact.png") left top no-repeat;
+    color: #005DAA;
+    font-size: 1.2em;
+    line-height: 48px;
+    margin-bottom: 3px;
+    padding-left: 57px;
+    text-shadow: 0 1px 0 #4ECEFF;
+    margin: 0px;
+}
+.contact_mail{
+	display: block;
+	background-image: url("images/icns_contact.png"), url("images/h_line_contact.png");
+	background-position: left -72px,  left bottom;
+	background-repeat: no-repeat, repeat-x;
+	background-color: transparent, transparent;
+	padding: 0 0 20px 40px;
+}
+.contact_mail a{
+	color: #333;
+	text-shadow: 0 1px 0 #4ECEFF;
+}
+label{
+display: block;
+background: transparent none;
+font-size: 0.9em;
+margin: 0;
+padding: 0;
+line-height: 1.5em;
+}
+input[type="text"], textarea{
+display: block;
+color: #7a7a7a;
+text-shadow: 0 1px 0 #fff;
+font-size: 1em;
+line-height: 1.8em;
+background-image: url(images/form_contact.png);
+width: 323px;
+height: 36px;
+border: 0px none;
+background-color: transparent;
+padding: 2px 10px;
+}
+textarea{
+	height: 112px;
+	background-position: left bottom;
+}
+.cBodyForm{
+display: block;
+width: 323px;
+height: 470px;
+margin: 0 auto;
+}
+p{
+display: block;
+margin-bottom: 0;
+}
+</style>
+<div id="contactForm">
+		<form class="cBodyForm" action="" class="contact_form">
+			<h2>Contacto</h2>
+			<p class="contact_mail"><a href="mailto:info@openshimano.com.ar">info@openshimano.com.ar</a></p>
+			<p>
+				<label for="name">Nombre</label>
+				<input type="text" name="name"/>
+			</p>
+			<p>
+				<label for="email">e-mail</label>
+				<input type="text" name="email"/>
+			</p>
+			<p>
+				<label for="msg">Detalle</label>
+				<textarea cols="34" rows="5" name="msg"></textarea>
+			</p>
+			
+            <p class="actions"><input type="button" class="button nonIcon right_arrow" name="msg" value="Enviar"/></p>
+			<!--<p class="info address"><span>25 de Mayo 2346</span><span>(5370) Villa Mercedes</span><span>San Luis</span></p>
+			<p class="info phone"><span>(02657) 42 4333</span></p>
+			<p class="info mobile"><span>(02657) 15 626226</span><span>15 318442</span></p>
+			<p class="info mail"><a href="#">ventas@aberturassrl.com.ar</a></p>
+-->
+		</form>
+		<div class="cFootForm"></div>
+</div>
